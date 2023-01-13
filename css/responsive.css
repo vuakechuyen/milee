@@ -1,0 +1,34 @@
+@media (max-width:739px){
+
+    #header_navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    #container{
+        padding-top: 73px;
+    }
+    .post_container{
+        width: 95%;
+        max-width: 95%;
+        margin:auto; 
+        margin-top: 30px;
+        display: block;
+        height: fit-content;
+    }
+
+    .img_post{
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+    }
+    .post_name{
+        margin: 6px 0px;
+    }
+    .details_post{
+        height:200px;
+        display: block;
+    }
+
+}
