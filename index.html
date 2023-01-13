@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<header>
+    <title>Lemaihoang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/grid.css">
+    <link type="text/css" rel="stylesheet" href="css/header_nav.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+</header>
+
+<body>
+    <div id="login_bar" class="login_container s-0 m-0" style="display: none;">
+        <div class="form_container ">
+            
+            <h2 id="title_form">Đăng Ký
+                <span class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+            </h2>
+            <div class="form_input">
+                <label for="">Họ và tên </label>
+                <span class="icon_input">  
+                 <i class="fa-solid fa-user"></i>
+                </span>
+                <input class="require "placeholder="Nhập tên của bạn vào đây" type="text" name="username" >
+                <span class="msgError"> </span>
+
+
+            </div>
+            <div class="form_input">
+                <label for="">Email </label>
+                <span class="icon_input">  
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                   </span>
+                <input class="require "placeholder="Nhập Email" type="text" name="email" > 
+                   <span class="msgError"></span>
+            </div>
+            <div class="form_input">
+                <label for="">Mật khẩu</label>
+                <span class="icon_input">  
+                  <i class="fa-sharp fa-solid fa-lock"></i>
+                   </span>
+                <input class="require "min="6" max="10" placeholder="Nhập mật khẩu" type="password" name="password">
+                <span class="eye eye_prohibit"><i class="fa-sharp fa-solid fa-eye-slash"></i> </span>
+                <span class="eye eye_show eye_current"><i class="fa-sharp fa-solid fa-eye"></i></span>
+                <span class="msgError"></span>
+
+            </div>
+            <div class="form_input">
+                <label for="">Nhập lại mật khẩu</label>
+                <span class="icon_input">  
+                  <i class="fa-sharp fa-solid fa-lock"></i>
+                   </span>
+                <input class="require"placeholder="Nhập lại mật khẩu" type="password" name="cofirm_password" >
+                <span class="eye eye_prohibit "><i class="fa-sharp fa-solid fa-eye-slash"></i></span>
+                <span class="eye eye_show eye_current"><i class="fa-sharp fa-solid fa-eye"></i></span>
+                <span class="msgError"></span>
+
+
+            </div>
+            <div class="form_input">
+                <p class="agree_test">Bằng việc đăng ký tài khoản, bạn đã đồng ý với <a href="#">Điều khoản dịch vụ</a>  và <a href="#">Chính sách </a>bảo mật của chúng tôi</p>
+                <button id="register_btn" class="btn">Đăng ký</button>
+                <p class="agree_test">Bạn đã có tài khoản? <a id="move_to_login" href="#" style="font-weight: 600;">Đăng nhập ngay</a></p>
+            </div>
+    
+        </div>
+        <div class="form_container active ">
+            
+            <h2 id="title_form">Đăng Nhập
+                <span class="close_btn"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+            </h2>
+            <div class="form_input">
+                <label for="">Email </label>
+                <span class="icon_input">  
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                   </span>
+                <input class="require "placeholder="Nhập Email" type="text" name="email" > 
+                   <span class="msgError"></span>
+            </div>
+            <div class="form_input">
+                <label for="">Mật khẩu</label>
+                <span class="icon_input">  
+                  <i class="fa-sharp fa-solid fa-lock"></i>
+                   </span>
+                <input class="require "min="6" max="10" placeholder="Nhập mật khẩu" type="password" name="password">
+                <span class="eye eye_prohibit"><i class="fa-sharp fa-solid fa-eye-slash"></i> </span>
+                <span class="eye eye_show eye_current" ><i class="fa-sharp fa-solid fa-eye"></i></span>
+                <span class="msgError"></span>
+
+            </div>
+            <div class="form_input">
+                <br>    
+                <button id="login_btn" class="btn">Đăng nhập</button>
+                <p class="agree_test">Bạn chưa có tài khoản? <a id="move_to_register"href="#" style="font-weight: 600;">Đăng ký ngay</a></p>
+            </div>
+    
+        </div>
+    
+    </div>
+    <!-- header sidebar -->
+    <div id="header_navbar">
+        <div id="first_page" class="grid">
+            <div class="row">
+                <div id="list_app" class="first_items s-0 col s-4 m-4 l-4 v-l-4 ">
+                    <ul id="society_app">
+                        <a class="apps" href="http://facebook.com/lemaihoanguser"><i class="fa-brands fa-square-facebook"></i></a> 
+                        <a class="apps" href=""><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                        <a class="apps" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <span id ="qr_icon" class="apps" href=""><i class="fa-sharp fa-solid fa-qrcode"></i>
+                            <div id="qr">
+                                <img src="image/qr.jpg" alt="">
+                            </div>
+                        </span>
+                    </ul>
+                </div>
+                
+                <!-- name -->
+                <div id="logo" class="first_items col s-12 m-12 l-4 v-l-4  logo_color">
+                    <div class="bar_logo">
+                        <img src="image/logo_deskop.png" alt="" class="logo_image s-0 m-0">
+                        <img src="image/logo_mobile_mini.png" alt="" class="logo_image l-0 v-l-0 ">
+                        <label id="bar_mobile" class="l-0 v-l-0 " for="check_menu">
+                           <i class="fas fa-bars fa-3x"></i>
+                       </label> 
+
+                    </div>
+                </div>
+                <!-- my property -->
+               <div id="property" class="first_items col s-0 s-4 m-4 l-4 v-l-4 ">
+                   <div class="row_item">
+                       <a class="nav_items item " href="#" ><i class="fa-sharp fa-solid fa-house-chimney"></i></a>
+                       <a class="nav_items item login_item" href="#"   >Đăng nhập</a>
+                       <a class="nav_items item  register_item" href="#"   >Đăng ký</a>
+                </div>
+                <div class="row_item">
+                    <div class="nav_items item" href="#"   >Favorites
+                        <label  for="faovrites" class="more_nav"><i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <input type="checkbox" name="" id="faovrites" hidden> 
+                        <ul class="list_items">
+                            <a class="nav_items_child item">Công nghệ</a>
+                            <a class="nav_items_child item">Sách</a>
+                            <a class="nav_items_child item">Đầu tư</a>  
+                            <a class="nav_items_child item">Thời trang</a> 
+                            
+                        </ul>
+                    </div>
+                    <div class="nav_items item" href="#"   >Albums
+                        <label for="albums" class="more_nav"><i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <input type="checkbox" name="" id="albums" hidden> 
+                        <ul class="list_items">
+                            <a class="nav_items_child item">Âm nhạc</a>
+                            <a class="nav_items_child item">Video</a>
+                            <a class="nav_items_child item">Hình ảnh</a>  
+                            <a class="nav_items_child item">Thể thao</a>  
+                        </ul>
+                    </div>
+                       <a class="nav_items item" href="#"   >Plans</a>
+                   </div>
+                    
+               </div>
+            </div>
+            
+            <!-- link apps -->
+           
+            
+           <!-- button menu mobile -->
+           
+        </div> 
+        <!-- menu mobile  -->
+        <input type="checkbox" hidden name="" class="check_menu-nav" id="check_menu">
+        <div id="mobile_screen" class="l-0 v-l-0">
+                    <div id="title_bar">
+                        <label  for="check_menu" id="close_btn"><i class="fa-sharp fa-solid fa-square-xmark"></i></label>
+                    </div>
+                    <div id="mobile_list">
+                        <a href="#" class="mobile_items"><i class="fa-sharp fa-solid fa-house-chimney"></i></a>
+                        <a href="#" class="mobile_items">Cuộc sống quanh tôi</a>
+                        <a href="#" class="mobile_items">Âm nhạc</a>
+                        <a href="#" class="mobile_items">Videos</a>
+                        <a href="#" class="mobile_items">Bộ sưu tâp Ảnh</a>
+                        <a href="#" class="mobile_items">Thể thao</a>
+                        <a href="#" class="mobile_items">Bộ sưu tập sách</a>
+                        <a href="#" class="mobile_items">Công nghệ</a>
+                        <a href="#" class="mobile_items">Thời trang</a>
+                        <a href="#" class="mobile_items">Đầu tư</a>
+
+
+
+
+                    </div> 
+            </div>
+    </div>
+    <div id="container"> 
+        <!-- slides -->
+        <div id="slides" class="grid">
+            <div class="row">
+                <div class="slide col s-12 m-6 l-4 v-l-4">
+                    <div class="slide_container">
+                        <img src="https://3.bp.blogspot.com/-L-lSpVd4xBo/XCmS7-G87_I/AAAAAAAAEOg/Mnn1t2JMusgh4VEioaJEZrSn39LTqmE5gCLcBGAs/s1000/12698541_1670650513186514_6796519023301018949_o_ollk.jpg" alt="">
+                        <div href="#" class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" a class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+
+                    <div class="slide_container">
+
+                        
+                        <img src="https://static.wixstatic.com/media/9d8ed5_6b6be1c97d1949c2b48bbdd68069ee35~mv2.jpg/v1/fill/w_1000,h_563,al_c/9d8ed5_6b6be1c97d1949c2b48bbdd68069ee35~mv2.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+
+                    <div class="slide_container">
+
+                        
+                        <img src="https://demoda.vn/wp-content/uploads/2022/01/hinh-nen-hot-girl-cho-may-tinh.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-gai-xinh-hd.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/01/Hinh-nen-gai-xinh-HD-de-thuong-cho-may-tinh-1.jpg?fit=780%2C520&ssl=1" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i.pinimg.com/originals/61/a5/88/61a58855d68837e6bcc17e5d88ec8840.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://watermark.lovepik.com/photo/20211209/large/lovepik-sweet-girl-beautiful-wedding-photo-picture_501694979.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide col s-12 m-6 l-4 v-l-4 s-0 m-0">
+                    <div class="slide_container">
+
+                        
+                        <img src="https://static.wixstatic.com/media/9d8ed5_6b6be1c97d1949c2b48bbdd68069ee35~mv2.jpg/v1/fill/w_1000,h_563,al_c/9d8ed5_6b6be1c97d1949c2b48bbdd68069ee35~mv2.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+
+                    <div class="slide_container">
+
+                        
+                        <img src="https://demoda.vn/wp-content/uploads/2022/01/hinh-nen-hot-girl-cho-may-tinh.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-gai-xinh-hd.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/01/Hinh-nen-gai-xinh-HD-de-thuong-cho-may-tinh-1.jpg?fit=780%2C520&ssl=1" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i.pinimg.com/originals/61/a5/88/61a58855d68837e6bcc17e5d88ec8840.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://watermark.lovepik.com/photo/20211209/large/lovepik-sweet-girl-beautiful-wedding-photo-picture_501694979.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://danviet.mediacdn.vn/zoom/480_300/upload/1-2020/images/2020-02-07/158107203184055-thumbnail.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide col s-12 m-6 l-4 v-l-4 s-0">
+                    <div class="slide_container">
+
+                        
+                        <img src="https://demoda.vn/wp-content/uploads/2022/01/hinh-nen-hot-girl-cho-may-tinh.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-gai-xinh-hd.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/01/Hinh-nen-gai-xinh-HD-de-thuong-cho-may-tinh-1.jpg?fit=780%2C520&ssl=1" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://i.pinimg.com/originals/61/a5/88/61a58855d68837e6bcc17e5d88ec8840.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://watermark.lovepik.com/photo/20211209/large/lovepik-sweet-girl-beautiful-wedding-photo-picture_501694979.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://danviet.mediacdn.vn/zoom/480_300/upload/1-2020/images/2020-02-07/158107203184055-thumbnail.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="slide_container">
+
+                        
+                        <img src="https://giupban.com.vn/wp-content/uploads/G-1.jpg" alt="">
+                        <div class="slide_detail">
+                            <div class="post_title">LEARN</div>
+                            <a href="#" class="slide_name">The colors that are in fashion</a>
+                            <div class="post_time">March 17, 2016</div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="previous_btn"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+                
+            </div>
+        </div>
+        <!-- main -->
+        <div class="container_main grid">
+            <div class="row wide">
+                <!-- main posts -->
+                <div class="posts col l-8 v-l-8 s-12">
+                    <div class="post_container">
+                        <img class="img_post " src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/83343224_1057722781246013_8045702814724259840_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=MrrRDtlBFKQAX9lRhmY&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfBSHiVCOwVBZd7jrUNVzIO64Ukz0NyIt8uopjpbBw-TKA&oe=63CE5B5A"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="image/20220409_231357.jpg"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="data:image/jpeg;base64,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"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="image/20220409_224405.jpg"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="image/20220522_090135.jpg"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="image/20220729_171547.jpg"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_container">
+
+                        <img class="img_post " src="image/20220817_203354.jpg"></img>
+                        <div class="details_post ">
+                            <div class="post_title">LEARN</div>
+                            <p class="post_name">How to be fashionable and save on purchases</p>
+                            <div class="post_meta">
+                                <img class="margin_right_2px"src="https://2.bp.blogspot.com/-Q0oaEPMQuso/XQHLecqFegI/AAAAAAAAAO4/rIXf1Ll7_Sca_sBn0sye_HJLRmVVZitoQCK4BGAYYCw/w30/photo.jpg" alt="">
+                                <em class="margin_right_2px">by</em>
+                                <a class="margin_right_2px" href="">linktacgia</a>
+                                <span ></span>
+                                <span class="post_time">March 17, 2016</span>
+                                <p class="post_extra">Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's standard…</p>  
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <!-- cột phụ -->
+                    <div class="property_personal col l-4 v-l-4 s-12 m-12">
+                        <div class="about_me_container">
+                            <div class="title-bar">ABOUT ME</div>
+                            <img src="https://img.redbull.com/images/c_crop,x_237,y_0,h_803,w_1205/c_fill,w_1000,h_640/q_auto,f_auto/redbullcom/2017/09/11/cf94b842-0205-48ac-81ae-e408d829d164/the-great-gatsby" alt="" id="avar_img">
+                            <p id="about_me-name">Lê Mai Hoàng <br>
+                                <span>Officer Army,Trader,Freelancer,Developer</span>
+                            </p>
+                            <div id="about_me-details">
+                                <li class="detail_property"><span class="detail_property-name">Age:</span><span class="detail_property-answer">23 olds</span> </li>
+                                <li class="detail_property"><span class="detail_property-name">Hight:</span><span class="detail_property-answer">178cm</span></li>
+                                <li class="detail_property"><span class="detail_property-name">Weight:</span><span class="detail_property-answer">70kg</span></li>
+                                <li class="detail_property"><span class="detail_property-name">From:</span><span class="detail_property-answer">Lưu Vĩnh Sơn,Thạch Hà,Hà Tĩnh</span></li>
+                                <li class="detail_property"><span class="detail_property-name">Address:</span><span class="detail_property-answer">Tân Phong,TP Biên Hoà,Đồng Nai</span></li>
+                                <li class="detail_property"><span class="detail_property-name">Phone:</span><span class="detail_property-answer">0328738854</span></li>
+                                <li class="detail_property"><span class="detail_property-name">Email:</span><span class="detail_property-answer"><em>hxtvthht@gmail.com</em></span></li>
+                                <li class="detail_property"><span class="detail_property-name">Fb:</span><span class="detail_property-answer"><em>http://facebook.com/lemaihoanguser</em></span></li>
+                            </div>
+                        </div>
+
+                             <div id="popular_posts">
+                                <div class="title-bar">POPULAR POST</div>
+                                    <div id="popular_posts-container">
+                                    <div class="popular_post">
+                                    <img src="image/bg3.jpg" alt="">
+                                    <div class="popular_post-detail">
+                                        <p class="popular_post-name">How to be fashionable and save on purchases</p>
+                                        <span class="post_time">March 17, 2016</span>
+                                    </div>
+
+                                </div>
+                                <div class="popular_post">
+                                    <img src="image/bg3.jpg" alt="">
+                                    <div class="popular_post-detail">
+                                        <p class="popular_post-name">How to be fashionable and save on purchases</p>
+                                        <span class="post_time">March 17, 2016</span>
+                                    </div>
+
+                                </div>
+                                <div class="popular_post">
+                                    <img src="image/bg3.jpg" alt="">
+                                    <div class="popular_post-detail">
+                                        <p class="popular_post-name">How to be fashionable and save on purchases</p>
+                                        <span class="post_time">March 17, 2016</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="facebook_blog">
+                            <div class="title-bar">FACEBOOK</div>
+                            <div id="fb_img"><img src="image/Watercolor Poster by Sko4.jpg" alt=""></div>
+                            
+                        </div>
+                        <div class="type_posts">
+                             <div class="title-bar">CATEGORIES</div>  
+                             <div id="type_post-container">
+                                 <li class="type_post"><a> Cuộc sống quanh tôi <span class="label_count">(3)</span></a></li>
+                                 <li class="type_post"><a>Âm nhạc <span class="label_count">(3)</span> </a></li>
+                                 <li class="type_post"><a> Videos <span class="label_count">(3)</span></a></li>
+                                 <li class="type_post"><a> Bộ sưu tập ảnh <span class="label_count">(3)</span></a></li>
+                                 <li class="type_post"><a> Thể thao <span class="label_count">(3)</span></a></li>
+                                 <li class="type_post"><a>Bộ sưu tập sách  <span class="label_count">(3)</span> </a></li>
+                                 <li class="type_post"><a> Công nghệ <span class="label_count">(3)</span></a></li>
+                                 <li class="type_post"><a>Thời trang <span class="label_count">(3)</span> </a></li>
+                                 <li class="type_post"><a> Đầu tư <span class="label_count">(3)</span></a> </li>
+
+
+                             </div>
+                        </div>  
+                        <div id="tags">
+                            <div class="title-bar">TAGS</div>
+                            <div class="tags_container">
+                                <li class="post_title"><a href="">MY LIFE</a></li>
+                                <li class="post_title"><a href="">MUSIC</a></li>
+                                <li class="post_title"><a href="">VIDEO</a></li>
+                                <li class="post_title"><a href="">PHOTO</a></li>
+                                <li class="post_title"><a href="">SPORT</a></li>
+                                <li class="post_title"><a href="">BOOK</a></li>
+                                <li class="post_title"><a href="">TECHNOLOGY</a></li>
+                                <li class="post_title"><a href="">FASHION</a></li>
+                                <li class="post_title"><a href="">BUSINESS</a></li>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                </div>
+            </div>
+
+        </div>
+<div id="foot_web">
+    Designed with <i class="fa-solid fa-heart"></i>  by Lemaihoang
+</div>
+
+
+    </div>
+</body>
+<footer>
+    
+    <script src="js/slide.js"></script>
+    <script src="js/loginhandel.js"></script>
+    <script src="js/renderpost.js"></script>
+
+
+
+</footer>
+
+</html>
